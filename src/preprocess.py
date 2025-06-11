@@ -18,7 +18,7 @@ def preprocess(file_path, test_size=0.2, random_state=42):
     """
     
     # Chargement des données
-    df = pd.read_csv(file_path,sep=',')
+    df = pd.read_csv(file_path,sep=';')
     
     # Copie pour éviter de modifier les données originales
     data = df.copy()
