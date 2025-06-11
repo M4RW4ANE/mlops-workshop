@@ -27,10 +27,10 @@ print(f"Precision: {prec:.2f}")
 print(f"Recall   : {rec:.2f}")
 print(f"F1-score : {f1:.2f}")
 
-with open("models/score.txt", "w") as f:
+with open("models/score_titanic.txt", "w") as f:
     f.write(f"Accuracy : {acc:.2f}\n")
     f.write(f"Precision: {prec:.2f}\n")
     f.write(f"Recall   : {rec:.2f}\n")
     f.write(f"F1-score : {f1:.2f}\n")
 
-dump(model, "models/model.joblib")
+dump(model, "models/model_titanic.joblib")
